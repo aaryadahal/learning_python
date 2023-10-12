@@ -23,13 +23,8 @@ Note: User has to fulfill both the conditions. '''
 # credit_score = input("Enter your credit score:(1 to 10)")
 # salary = input("Enter your salary:")
 # if (float(credit_score) > 5) and (float(salary) > 35000):
-
 #     print("Congratulations! You are eligible recieve take loan from our bank.")
 # elif (float(credit_score) < 5):
-
-#     print(
-#         f"Sorry, unfortunately with a credit score of {credit_score}, you cannot recieve loan form our bank.")
+#     print(f"Sorry, unfortunately with a credit score of {credit_score}, you cannot recieve loan form our bank.")
 # else:
-#     print(
-#         f"Sorry, unfortunately with a salary of {salary}, you cannot recieve loan form our bank.")
-
+#     print(f"Sorry, unfortunately with a salary of {salary}, you cannot recieve loan form our bank.")
