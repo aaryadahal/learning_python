@@ -21,8 +21,7 @@ decision = input("Do you want to provide hints? (Yes/No)")
 
 if decision.upper() == "YES":
     while True:
-        attempts_hint = int(
-            input("After how many attempts do you want to provide hints?:"))
+        attempts_hint = int(input("After how many attempts do you want to provide hints?:"))
         if attempts_hint < times:
             break
 
@@ -50,13 +49,13 @@ for letter in text_4:
 print()
 
 for i in range(times):
-    if decision.upper() == "YES" and i + 1 >= attempts_hint:
-        print("Hint:", hints[i - attempts_hint + 1])
+    if decision.upper() == "YES" and attempts_hint==0:
+        print("Hint:", hints[i])
+    elif decision.upper() == "YES" and i >= attempts_hint:
+        print("Hint:", hints[i - attempts_hint])
     guess = int(input(f'Guess {i + 1}:'))
     if guess == secret_number:
         print("Congratulations, you guessed it!")
         break
     else:
-        print(
-            f"Oops, wrong answer! You have {times - i - 1} chances remaining.")
-
+        print(f"oops, wrong answer! You have {times - i - 1} chances remaining.")
